@@ -14,12 +14,14 @@ class ViewController: UIViewController {
     
     override func loadView() {
         self.view = self.myView
+        self.view.backgroundColor = .systemBackground
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.myView.setSelectedLabelText(text: "Nenhum nome selecionado")
         
     }
 

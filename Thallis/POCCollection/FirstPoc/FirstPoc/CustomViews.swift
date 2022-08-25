@@ -14,8 +14,10 @@ struct CustomViews {
     static func newLabel() -> UILabel {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.backgroundColor = .systemGray
-        label.textColor = .systemBlue
+        label.backgroundColor = .systemBlue
+        label.textColor = .white
+        label.textAlignment = .center
+        label.layer.masksToBounds = true
         
         return label
     }
