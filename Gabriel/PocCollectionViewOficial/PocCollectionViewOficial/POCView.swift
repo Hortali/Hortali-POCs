@@ -37,7 +37,7 @@ class POCView: UIView {
     }
     
     private func setupUI() {
-        self.backgroundColor = .brown
+        self.backgroundColor = .gray
         
         self.titleLabel.layer.cornerRadius = 10
         self.selectedLabel.layer.cornerRadius = 10
