@@ -55,7 +55,7 @@ class View: UIView {
         self.nameCollection.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: space)
        ])
    }
-    
+
     private func staticText() {
         self.titleLabel.setupText(with: LabelInfo(text: "Nomes legais",
                                                      size: 24,
@@ -84,5 +84,5 @@ class View: UIView {
         
     }
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented)")}
-    
+
 }
