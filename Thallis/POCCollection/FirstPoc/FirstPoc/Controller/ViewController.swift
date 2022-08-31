@@ -7,39 +7,47 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-   
-    let coreData: [String] = ["Guilherme", "Leticia", "Debora", "Muza", "Gabriel", "Thallis"]
+protocol ViewControllerDelegate: NSObject {
     
-    //Data Source
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.coreData.count
+    func getDados() -> [String] //é uma lista de string porque no nosso coreData (na View Controller) é uma lista de strings
+     
+    func updateSelectedCell(at row: Int)
+    
+}
+
+class ViewController: UIViewController, ViewControllerDelegate {
+    func getDados() -> [String] {
+        return self.coreData
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ViewCell.identifier, for: indexPath) as? ViewCell else {
-            return UICollectionViewCell()
-        }
-        cell.setText(with: self.coreData[indexPath.row])
-        return cell
-    }
-    
-    
-    //Delegate
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.myView.setSelectedLabelText(text: self.coreData[indexPath.row])
+    func updateSelectedCell(at row: Int) {
+        self.myView.setSelectedLabelText(text: self.coreData[row])
     }
     
 
+    //MARK: - Atributos
     let myView = View()
     
+    let coreData: [String] = ["Guilherme", "Leticia", "Debora", "Muza", "Gabriel", "Thallis"]
+    
+    let collectionDataSource = NameCollectionDataSource()
+    
+    let collectionDelegate = NameCollectionDelegate()
+    
     override func loadView() {
+        super.loadView()
         self.view = self.myView
-        self.view.backgroundColor = .systemBackground
-        self.myView.nameCollection.dataSource = self
-        self.myView.nameCollection.delegate = self
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.collectionDataSource.delegateViewController = self
+        
+        self.myView.nameCollection.delegate = self.collectionDelegate
+        
+        self.myView.nameCollection.dataSource = self.collectionDataSource
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
