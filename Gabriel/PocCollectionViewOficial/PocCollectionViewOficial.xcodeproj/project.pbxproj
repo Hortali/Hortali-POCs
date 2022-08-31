@@ -16,6 +16,8 @@
 		B26FDDB228B93A3A00511660 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26FDDAB28B93A3A00511660 /* ViewController.swift */; };
 		B26FDDB428B9549B00511660 /* AppDelegate.swift 14-27-26-427.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26FDDB328B9549B00511660 /* AppDelegate.swift 14-27-26-427.swift */; };
 		B26FDDB628B9553300511660 /* Shared in Resources */ = {isa = PBXBuildFile; fileRef = B26FDDB528B9553300511660 /* Shared */; };
+		B2B2AD5728BEA87200245A21 /* NameCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B2AD5628BEA87200245A21 /* NameCollectionDelegate.swift */; };
+		B2B2AD5928BEA8B300245A21 /* NameCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B2AD5828BEA8B300245A21 /* NameCollectionDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		B26FDDAB28B93A3A00511660 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B26FDDB328B9549B00511660 /* AppDelegate.swift 14-27-26-427.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate.swift 14-27-26-427.swift"; sourceTree = "<group>"; };
 		B26FDDB528B9553300511660 /* Shared */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Shared; sourceTree = "<group>"; };
+		B2B2AD5628BEA87200245A21 /* NameCollectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCollectionDelegate.swift; sourceTree = "<group>"; };
+		B2B2AD5828BEA8B300245A21 /* NameCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCollectionDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				B26FDDA828B93A3A00511660 /* UILabel+setupText.swift */,
 				B26FDDAB28B93A3A00511660 /* ViewController.swift */,
 				B26FDD8B28B9390C00511660 /* Info.plist */,
+				B2B2AD5628BEA87200245A21 /* NameCollectionDelegate.swift */,
+				B2B2AD5828BEA8B300245A21 /* NameCollectionDataSource.swift */,
 			);
 			path = PocCollectionViewOficial;
 			sourceTree = "<group>";
@@ -148,12 +154,14 @@
 			files = (
 				B26FDDAF28B93A3A00511660 /* UILabel+setupText.swift in Sources */,
 				B26FDDB428B9549B00511660 /* AppDelegate.swift 14-27-26-427.swift in Sources */,
+				B2B2AD5728BEA87200245A21 /* NameCollectionDelegate.swift in Sources */,
 				B26FDDB028B93A3A00511660 /* Custom Views.swift in Sources */,
 				B26FDDAC28B93A3A00511660 /* PocViewCell.swift in Sources */,
 				B26FDDAE28B93A3A00511660 /* LabelInfo.swift in Sources */,
 				B26FDDB128B93A3A00511660 /* POCView.swift in Sources */,
 				B26FDDB228B93A3A00511660 /* ViewController.swift in Sources */,
 				B26FDDAD28B93A3A00511660 /* SceneDelegate.swift in Sources */,
+				B2B2AD5928BEA8B300245A21 /* NameCollectionDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

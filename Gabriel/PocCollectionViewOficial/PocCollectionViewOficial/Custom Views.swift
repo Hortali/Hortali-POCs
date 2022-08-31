@@ -24,7 +24,7 @@ class CustomViews {
         let layout = UICollectionViewFlowLayout()
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.translatesAutoresizingMaskIntoConstraints = false
-        cv.backgroundColor = .yellow
+        cv.backgroundColor = .gray
         
         return cv
     }
