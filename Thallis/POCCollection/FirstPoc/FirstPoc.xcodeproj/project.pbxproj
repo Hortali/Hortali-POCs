@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0609FF8928B81464006B248A /* UILabel+setupText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0609FF8828B81464006B248A /* UILabel+setupText.swift */; };
-		0609FF8B28B8152E006B248A /* UILabelInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0609FF8A28B8152E006B248A /* UILabelInfo.swift */; };
+		0609FF8B28B8152E006B248A /* LabelInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0609FF8A28B8152E006B248A /* LabelInfo.swift */; };
+		0646066028BFF25300DA75AF /* ViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0646065F28BFF25300DA75AF /* ViewControllerProtocol.swift */; };
 		0657896128B5765B0025244C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0657896028B5765B0025244C /* AppDelegate.swift */; };
 		0657896328B5765B0025244C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0657896228B5765B0025244C /* SceneDelegate.swift */; };
 		0657896528B5765B0025244C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0657896428B5765B0025244C /* ViewController.swift */; };
@@ -24,7 +25,8 @@
 
 /* Begin PBXFileReference section */
 		0609FF8828B81464006B248A /* UILabel+setupText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+setupText.swift"; sourceTree = "<group>"; };
-		0609FF8A28B8152E006B248A /* UILabelInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelInfo.swift; sourceTree = "<group>"; };
+		0609FF8A28B8152E006B248A /* LabelInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelInfo.swift; sourceTree = "<group>"; };
+		0646065F28BFF25300DA75AF /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocol.swift; sourceTree = "<group>"; };
 		0657895D28B5765B0025244C /* FirstPoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstPoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0657896028B5765B0025244C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0657896228B5765B0025244C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +64,7 @@
 		063B3FD728B95A900093DCCC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0609FF8A28B8152E006B248A /* UILabelInfo.swift */,
+				0609FF8A28B8152E006B248A /* LabelInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -117,6 +119,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		0646066128BFF26600DA75AF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0646065F28BFF25300DA75AF /* ViewControllerProtocol.swift */,
+			);
+			name = Protocols;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		0657895428B5765B0025244C = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +157,7 @@
 				063B3FDB28B95B140093DCCC /* Cell */,
 				06C6D1F828BEA7D000B59681 /* Delegates */,
 				06C6D1FD28BEA89A00B59681 /* Data Source */,
+				0646066128BFF26600DA75AF /* Protocols */,
 				0657896E28B5765F0025244C /* LaunchScreen.storyboard */,
 				0657897128B5765F0025244C /* Info.plist */,
 			);
@@ -264,8 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0646066028BFF25300DA75AF /* ViewControllerProtocol.swift in Sources */,
 				06C6D1FC28BEA89700B59681 /* NameCollectionDataSource.swift in Sources */,
-				0609FF8B28B8152E006B248A /* UILabelInfo.swift in Sources */,
+				0609FF8B28B8152E006B248A /* LabelInfo.swift in Sources */,
 				0681FA7F28B6A015006C3E51 /* ViewCell.swift in Sources */,
 				0609FF8928B81464006B248A /* UILabel+setupText.swift in Sources */,
 				0657896528B5765B0025244C /* ViewController.swift in Sources */,

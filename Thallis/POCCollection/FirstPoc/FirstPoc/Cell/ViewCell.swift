@@ -22,7 +22,7 @@ class ViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+
         self.setText(with: "Sem nome")
         self.setupView()
         self.setupUI()

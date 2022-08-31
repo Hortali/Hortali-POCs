@@ -7,15 +7,7 @@
 
 import UIKit
 
-protocol ViewControllerDelegate: NSObject {
-    
-    func getDados() -> [String] //é uma lista de string porque no nosso coreData (na View Controller) é uma lista de strings
-     
-    func updateSelectedCell(at row: Int)
-    
-}
-
-class ViewController: UIViewController, ViewControllerDelegate {
+class ViewController: UIViewController, ViewControllerProtocol {
     func getDados() -> [String] {
         return self.coreData
     }
@@ -24,7 +16,6 @@ class ViewController: UIViewController, ViewControllerDelegate {
         self.myView.setSelectedLabelText(text: self.coreData[row])
     }
     
-
     //MARK: - Atributos
     let myView = View()
     
@@ -42,11 +33,14 @@ class ViewController: UIViewController, ViewControllerDelegate {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        //Instâncias das variáveis de delegate e dataSource
         self.collectionDataSource.delegateViewController = self
+        self.collectionDelegate.delegateViewController = self
         
+        // Atribuindo o delegate e dataSource da UIViewController
         self.myView.nameCollection.delegate = self.collectionDelegate
-        
         self.myView.nameCollection.dataSource = self.collectionDataSource
+        
     }
     
     override func viewDidLoad() {
@@ -55,6 +49,4 @@ class ViewController: UIViewController, ViewControllerDelegate {
         self.myView.setSelectedLabelText(text: "Nenhum nome selecionado")
         
     }
-
 }
-

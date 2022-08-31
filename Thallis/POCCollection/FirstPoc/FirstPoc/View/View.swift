@@ -19,7 +19,7 @@ class View: UIView {
     /// Mostra todas as opções disponíveis de célula
     public let nameCollection: UICollectionView = CustomViews.newCollectionView()
     
-    //Para fazer as constraints dinâmicas
+    /// Constraints dinâmicas
     private var dynamicConstraint: [NSLayoutConstraint] = []
     
     /// Configurar a collectionView - Todas as configurações serão feitas aqui
@@ -49,7 +49,6 @@ class View: UIView {
     private func registerCells() {
         self.nameCollection.register(ViewCell.self, forCellWithReuseIdentifier: ViewCell.identifier)
     }
-    
 
     /// Define o layout que as collections terão
     private func setupCollectionFlows() {
@@ -63,6 +62,7 @@ class View: UIView {
         self.addSubview(self.nameCollection)
     }
     
+    // Atribui os textos e suas características
     private func staticText() {
         self.titleLabel.setupText(with: LabelInfo(text: "Nomes legais",
                                                      size: 24,
@@ -74,6 +74,7 @@ class View: UIView {
         self.selectedLabel.setupText(with: LabelInfo(text: text,
                                                      size: 16,
                                                      weight: .regular))
+        
     }
     
     override func layoutSubviews() {
@@ -89,7 +90,7 @@ class View: UIView {
         let sideSpace: CGFloat = self.bounds.height * 0.02
         let space: CGFloat = 16
         
-        // Zera todas as constraints
+        // Desativa todas as constraints da tela
         NSLayoutConstraint.deactivate(self.dynamicConstraint)
         
         self.dynamicConstraint = ([
@@ -108,10 +109,11 @@ class View: UIView {
         self.nameCollection.topAnchor.constraint(equalTo: self.selectedLabel.bottomAnchor, constant: space),
         self.nameCollection.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: space)
        ])
-        
+        // Ativa todas as constraints da tela
         NSLayoutConstraint.activate(self.dynamicConstraint)
    }
     
+        //Função para definir as características da UI
     private func setupUI() {
         self.backgroundColor = .systemBackground
         

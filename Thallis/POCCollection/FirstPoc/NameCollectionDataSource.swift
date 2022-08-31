@@ -8,9 +8,8 @@
 import UIKit
 
 class NameCollectionDataSource: NSObject, UICollectionViewDataSource {
-    
-    var delegateViewController: ViewControllerDelegate?
-    
+    // Chamada do protocolo para comunicar com a Controller
+    var delegateViewController: ViewControllerProtocol?
     
     //Data Source
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int { 
