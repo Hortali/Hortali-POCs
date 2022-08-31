@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+// esta extensão foi criada para configurar as labels com uma chamada de função.
 extension UILabel {
     internal func setupText(info: LabelInfo) {
         self.text = info.text

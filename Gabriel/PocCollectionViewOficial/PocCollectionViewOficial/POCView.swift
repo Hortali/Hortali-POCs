@@ -8,13 +8,14 @@
 import Foundation
 import UIKit
 
+
 class POCView: UIView {
     public let titleLabel: UILabel = CustomViews.newLabel()
     public let selectedLabel: UILabel = CustomViews.newLabel()
     public let nameCollection: UICollectionView = CustomViews.newCollectionView()
     
     private var dynamicConstraint: [NSLayoutConstraint] = []
-
+    
     // Esta classe realiza as configurações da colletction. Define o sentido do scroll e o tamanho da célula.
     private let collectionFlow: UICollectionViewFlowLayout = {
         let cvFlow = UICollectionViewFlowLayout()
@@ -65,10 +66,9 @@ class POCView: UIView {
     }
     
     private func setupUI() {
-        self.backgroundColor = .gray
+        self.backgroundColor = .black
         self.titleLabel.layer.cornerRadius = 10
         self.selectedLabel.layer.cornerRadius = 10
-//        self.nameCollection.layer.cornerRadius = 30
         
         
     }
@@ -77,8 +77,9 @@ class POCView: UIView {
         let lateral: CGFloat = self.bounds.width * 0.05
         let between: CGFloat = 15
         
+        // Todas as constraints da tela são desativadas. Fazemos isso para que as Constraints que definirmos não conflitem com as constraints já existentes.
         NSLayoutConstraint.deactivate(self.dynamicConstraint)
-        
+        // Difnimos novas constraints para os elementos da tela
         self.dynamicConstraint = [
 
             self.titleLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
@@ -98,7 +99,7 @@ class POCView: UIView {
             self.nameCollection.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -lateral),
             self.nameCollection.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor)
         ]
-        
+        // Ativamos as Contraints que definimos
         NSLayoutConstraint.activate(self.dynamicConstraint)
         
         

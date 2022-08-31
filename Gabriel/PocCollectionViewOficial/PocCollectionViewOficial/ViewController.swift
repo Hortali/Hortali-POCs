@@ -7,13 +7,9 @@
 
 import UIKit
 
-protocol ViewControllerDelegate: NSObject {
-    func getData() -> [String]
-    
-    func updateCellSelected(at row: Int)
-}
 
-class ViewController: UIViewController, ViewControllerDelegate {
+class ViewController: UIViewController, ViewControllerProtocol {
+    /* MARK: Funções de protocolo */
     func getData() -> [String] {
         return self.coreData
     }
@@ -25,8 +21,8 @@ class ViewController: UIViewController, ViewControllerDelegate {
     /* MARK: Atributos */
     let coreData = ["Gui", "Lê", "Débs", "Muza", "Thallis", "Batista"]    
     
+    // Instancia das variáveis de delegate e Data source
     let collectionDataSource = NameCollectionDataSource()
-    
     let collectionDelegate = NameCollectionDelegate()
     
     let myView = POCView()
@@ -46,8 +42,11 @@ class ViewController: UIViewController, ViewControllerDelegate {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        // A controller configura a comunicação, informando que o protocolo de delegate e Data Source é ela mesmo.
         self.collectionDataSource.delegateViewController = self
-        
+        self.collectionDelegate.delegateViewController = self
+
+        // Definição de onde vem o delegate e o DataSource da collection
         self.myView.nameCollection.dataSource = collectionDataSource
         self.myView.nameCollection.delegate = collectionDelegate
     }

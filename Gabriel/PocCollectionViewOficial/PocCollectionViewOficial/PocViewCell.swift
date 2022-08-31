@@ -13,7 +13,6 @@ class POCViewCell: UICollectionViewCell {
     private let nameLabel: UILabel = {
         let lbl = CustomViews.newLabel()
         lbl.adjustsFontSizeToFitWidth = true
-        
         return lbl
     }()
 
@@ -42,7 +41,7 @@ class POCViewCell: UICollectionViewCell {
     }
     
     private func setupUI() {
-        self.backgroundColor = .green
+        self.backgroundColor = .yellow
         self.layer.cornerRadius = 15
     }
     

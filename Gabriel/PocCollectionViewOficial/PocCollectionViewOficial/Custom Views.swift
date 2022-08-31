@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+// Esta classe tem a função da Design System.
 class CustomViews {
     static func newLabel() -> UILabel {
         let lbl = UILabel()
@@ -24,7 +25,7 @@ class CustomViews {
         let layout = UICollectionViewFlowLayout()
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.translatesAutoresizingMaskIntoConstraints = false
-        cv.backgroundColor = .gray
+        cv.backgroundColor = .black
         
         return cv
     }

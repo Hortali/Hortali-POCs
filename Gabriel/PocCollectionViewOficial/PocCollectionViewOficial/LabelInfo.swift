@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+// Esta estrutura armazena as informações necessárias para configuração de uma Label. Geralmente é usada junto a chamada da função setupText que definimos como extensão de UILabel.
+
 struct LabelInfo {
     let text: String
     let size: CGFloat

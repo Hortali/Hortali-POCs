@@ -9,7 +9,8 @@ import Foundation
 import UIKit
 
 class NameCollectionDataSource: NSObject, UICollectionViewDataSource {
-    var delegateViewController: ViewControllerDelegate?
+    // Chamada do protocolo para comunicar com a Controller
+    var delegateViewController: ViewControllerProtocol?
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if let delegate = delegateViewController {
