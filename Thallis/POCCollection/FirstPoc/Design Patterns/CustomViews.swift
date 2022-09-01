@@ -21,14 +21,13 @@ struct CustomViews {
         
         return label
     }
-    
     /// Cria uma nova Collection View de acordo com o padrão da aplicação.
     static func newCollectionView() -> UICollectionView {
         let layout = UICollectionViewFlowLayout()
-        let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        cv.translatesAutoresizingMaskIntoConstraints = false
-        cv.backgroundColor = .secondarySystemBackground
+        let cvLayout = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        cvLayout.translatesAutoresizingMaskIntoConstraints = false
+        cvLayout.backgroundColor = .secondarySystemBackground
         
-        return cv
+        return cvLayout
     }
 }
