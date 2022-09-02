@@ -26,7 +26,7 @@ class ViewController: UIViewController, ViewControllerProtocol {
     let collectionDelegate = NameCollectionDelegate()
     
     override func loadView() {
-        super.loadView()
+//        super.loadView()
         self.view = self.myView
     }
     
