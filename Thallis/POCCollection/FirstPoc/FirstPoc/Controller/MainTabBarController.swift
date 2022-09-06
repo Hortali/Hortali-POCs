@@ -16,7 +16,7 @@ class MainTabBarController: UITabBarController {
 
         viewControllers = [discover]
         
-        self.tabBar.backgroundColor = .red
+        self.tabBar.backgroundColor = .green
         
         
     }
