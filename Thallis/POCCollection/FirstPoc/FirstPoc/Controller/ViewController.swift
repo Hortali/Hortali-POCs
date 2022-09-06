@@ -11,11 +11,9 @@ class ViewController: UIViewController, ViewControllerProtocol {
     func getDados() -> [String] {
         return self.coreData
     }
-    
     func updateSelectedCell(at row: Int) {
         self.myView.setSelectedLabelText(text: self.coreData[row])
     }
-    
     //MARK: - Atributos
     let myView = View()
     
