@@ -28,10 +28,16 @@ class ViewController: UIViewController, ViewControllerProtocol {
     override func loadView() {
 //        super.loadView()
         self.view = self.myView
+        
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
+        print(self.view.frame)
+        print(self.view.safeAreaLayoutGuide.layoutFrame)
+        
         
         //Instâncias das variáveis de delegate e dataSource
         self.collectionDataSource.delegateViewController = self
@@ -42,6 +48,7 @@ class ViewController: UIViewController, ViewControllerProtocol {
         self.myView.nameCollection.dataSource = self.collectionDataSource
         
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
