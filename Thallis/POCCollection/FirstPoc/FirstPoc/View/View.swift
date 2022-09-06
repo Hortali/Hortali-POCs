@@ -42,7 +42,6 @@ class View: UIView {
         self.setupUI()
         self.registerCells()
         self.setupCollectionFlows()
-
     }
     
     /// Faz o registro das células nas Collections
@@ -85,6 +84,7 @@ class View: UIView {
     private func nameCollectionView() {
     }
     
+    
     /// Define as constraints das células da CollectionView
     private func setupConstraints() {
         let sideSpace: CGFloat = self.bounds.height * 0.02
@@ -123,7 +123,10 @@ class View: UIView {
         self.selectedLabel.layer.cornerRadius = corners
         self.nameCollection.layer.cornerRadius = corners * 2
         
+        
+        
     }
+    
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented)")}
 
 }

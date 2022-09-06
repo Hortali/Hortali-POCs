@@ -21,6 +21,7 @@
 		0681FA8228B6B1FA006C3E51 /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0681FA8128B6B1FA006C3E51 /* CustomViews.swift */; };
 		06C6D1FA28BEA7F100B59681 /* NameCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C6D1F928BEA7F100B59681 /* NameCollectionDelegate.swift */; };
 		06C6D1FC28BEA89700B59681 /* NameCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C6D1FB28BEA89700B59681 /* NameCollectionDataSource.swift */; };
+		06EAB1E428C668F9005C2B71 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EAB1E328C668F9005C2B71 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		0681FA8128B6B1FA006C3E51 /* CustomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
 		06C6D1F928BEA7F100B59681 /* NameCollectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCollectionDelegate.swift; sourceTree = "<group>"; };
 		06C6D1FB28BEA89700B59681 /* NameCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCollectionDataSource.swift; sourceTree = "<group>"; };
+		06EAB1E328C668F9005C2B71 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				0657896428B5765B0025244C /* ViewController.swift */,
+				06EAB1E328C668F9005C2B71 /* MainTabBarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				0609FF8928B81464006B248A /* UILabel+setupText.swift in Sources */,
 				0657896528B5765B0025244C /* ViewController.swift in Sources */,
 				0681FA8228B6B1FA006C3E51 /* CustomViews.swift in Sources */,
+				06EAB1E428C668F9005C2B71 /* MainTabBarController.swift in Sources */,
 				06C6D1FA28BEA7F100B59681 /* NameCollectionDelegate.swift in Sources */,
 				0657896128B5765B0025244C /* AppDelegate.swift in Sources */,
 				0681FA7D28B69F81006C3E51 /* View.swift in Sources */,

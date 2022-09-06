@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  FirstPoc
+//  SwiftLintProject
 //
-//  Created by Thallis Sousa on 23/08/22.
+//  Created by Thallis Sousa on 01/09/22.
 //
 
 import UIKit
@@ -11,17 +11,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-    func scene(_ scene: UIScene,
-               willConnectTo session: UISceneSession,
-               options connectionOptions: UIScene.ConnectionOptions)
-    {
-        guard let windowScene = (scene as? UIWindowScene) else { return }
-        self.window = UIWindow(windowScene: windowScene)
-//        let tabBar = MainTabBarController()
-        self.window?.rootViewController = ViewController()
-        self.window?.makeKeyAndVisible()
-        
 
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
+        // If using a storyboard, the `window` property will automatically beljasdnfajksdnfakljsdnfalkjsdnfkajsdnfakjsndfkjansdfkjansdkjfanskldjdfnaklsjdnfakjsdnfakjsdnfkjansdfkjansdkjfnasdlkjfnakjsdnfakljsdnfalkjsdnflakjsnflkajn initialized and attached to the scene.fakjsdnfakjlsdnfalkjsnd flkjasndflkajsndfkljn
+        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        
+        guard let _ = (scene as? UIWindowScene) else { return }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -54,4 +50,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Save changes in the application's managed object context when the application transitions to the background.
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
+
+
 }
