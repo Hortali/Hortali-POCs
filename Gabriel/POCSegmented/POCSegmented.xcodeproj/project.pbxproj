@@ -9,23 +9,39 @@
 /* Begin PBXBuildFile section */
 		B2E7C85028C7B676002661D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E7C84F28C7B676002661D5 /* AppDelegate.swift */; };
 		B2E7C85228C7B676002661D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E7C85128C7B676002661D5 /* SceneDelegate.swift */; };
-		B2E7C85428C7B676002661D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E7C85328C7B676002661D5 /* ViewController.swift */; };
-		B2E7C85728C7B676002661D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E7C85528C7B676002661D5 /* Main.storyboard */; };
+		B2E7C85428C7B676002661D5 /* SegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E7C85328C7B676002661D5 /* SegmentedViewController.swift */; };
 		B2E7C85A28C7B676002661D5 /* POCSegmented.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2E7C85828C7B676002661D5 /* POCSegmented.xcdatamodeld */; };
 		B2E7C85C28C7B678002661D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E7C85B28C7B678002661D5 /* Assets.xcassets */; };
 		B2E7C85F28C7B678002661D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E7C85D28C7B678002661D5 /* LaunchScreen.storyboard */; };
+		B2E7C86828C7B9D4002661D5 /* SegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E7C86728C7B9D4002661D5 /* SegmentedView.swift */; };
+		B2E7C86A28C7BCD4002661D5 /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E7C86928C7BCD4002661D5 /* CustomViews.swift */; };
+		B2E7C87728C7C558002661D5 /* LabelInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E7C87328C7C558002661D5 /* LabelInfo.swift */; };
+		B2E7C87828C7C558002661D5 /* UILabel+setupText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E7C87428C7C558002661D5 /* UILabel+setupText.swift */; };
+		B2E7C87928C7C558002661D5 /* POCSegmented.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2E7C87528C7C558002661D5 /* POCSegmented.xcdatamodeld */; };
+		B2E7C87B28C7E014002661D5 /* PocSegmentedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E7C87A28C7E014002661D5 /* PocSegmentedCell.swift */; };
+		B2E7C87D28C7E229002661D5 /* ViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E7C87C28C7E229002661D5 /* ViewControllerProtocol.swift */; };
+		B2E7C87F28C7E259002661D5 /* TestCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E7C87E28C7E259002661D5 /* TestCollectionDataSource.swift */; };
+		B2E7C88128C7E266002661D5 /* TestCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E7C88028C7E266002661D5 /* TestCollectionDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B2E7C84C28C7B676002661D5 /* POCSegmented.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POCSegmented.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E7C84F28C7B676002661D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2E7C85128C7B676002661D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B2E7C85328C7B676002661D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B2E7C85628C7B676002661D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2E7C85328C7B676002661D5 /* SegmentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedViewController.swift; sourceTree = "<group>"; };
 		B2E7C85928C7B676002661D5 /* POCSegmented.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = POCSegmented.xcdatamodel; sourceTree = "<group>"; };
 		B2E7C85B28C7B678002661D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2E7C85E28C7B678002661D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2E7C86028C7B678002661D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2E7C86728C7B9D4002661D5 /* SegmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedView.swift; sourceTree = "<group>"; };
+		B2E7C86928C7BCD4002661D5 /* CustomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
+		B2E7C87328C7C558002661D5 /* LabelInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelInfo.swift; sourceTree = "<group>"; };
+		B2E7C87428C7C558002661D5 /* UILabel+setupText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+setupText.swift"; sourceTree = "<group>"; };
+		B2E7C87628C7C558002661D5 /* POCSegmented.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = POCSegmented.xcdatamodel; sourceTree = "<group>"; };
+		B2E7C87A28C7E014002661D5 /* PocSegmentedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocSegmentedCell.swift; sourceTree = "<group>"; };
+		B2E7C87C28C7E229002661D5 /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocol.swift; sourceTree = "<group>"; };
+		B2E7C87E28C7E259002661D5 /* TestCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionDataSource.swift; sourceTree = "<group>"; };
+		B2E7C88028C7E266002661D5 /* TestCollectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +58,7 @@
 		B2E7C84328C7B676002661D5 = {
 			isa = PBXGroup;
 			children = (
+				B2E7C87528C7C558002661D5 /* POCSegmented.xcdatamodeld */,
 				B2E7C84E28C7B676002661D5 /* POCSegmented */,
 				B2E7C84D28C7B676002661D5 /* Products */,
 			);
@@ -60,12 +77,19 @@
 			children = (
 				B2E7C84F28C7B676002661D5 /* AppDelegate.swift */,
 				B2E7C85128C7B676002661D5 /* SceneDelegate.swift */,
-				B2E7C85328C7B676002661D5 /* ViewController.swift */,
-				B2E7C85528C7B676002661D5 /* Main.storyboard */,
+				B2E7C85328C7B676002661D5 /* SegmentedViewController.swift */,
+				B2E7C86728C7B9D4002661D5 /* SegmentedView.swift */,
+				B2E7C86928C7BCD4002661D5 /* CustomViews.swift */,
 				B2E7C85B28C7B678002661D5 /* Assets.xcassets */,
+				B2E7C87328C7C558002661D5 /* LabelInfo.swift */,
+				B2E7C87428C7C558002661D5 /* UILabel+setupText.swift */,
 				B2E7C85D28C7B678002661D5 /* LaunchScreen.storyboard */,
 				B2E7C86028C7B678002661D5 /* Info.plist */,
 				B2E7C85828C7B676002661D5 /* POCSegmented.xcdatamodeld */,
+				B2E7C87A28C7E014002661D5 /* PocSegmentedCell.swift */,
+				B2E7C87C28C7E229002661D5 /* ViewControllerProtocol.swift */,
+				B2E7C87E28C7E259002661D5 /* TestCollectionDataSource.swift */,
+				B2E7C88028C7E266002661D5 /* TestCollectionDelegate.swift */,
 			);
 			path = POCSegmented;
 			sourceTree = "<group>";
@@ -80,6 +104,7 @@
 				B2E7C84828C7B676002661D5 /* Sources */,
 				B2E7C84928C7B676002661D5 /* Frameworks */,
 				B2E7C84A28C7B676002661D5 /* Resources */,
+				B2E7C86628C7B806002661D5 /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -130,35 +155,56 @@
 			files = (
 				B2E7C85F28C7B678002661D5 /* LaunchScreen.storyboard in Resources */,
 				B2E7C85C28C7B678002661D5 /* Assets.xcassets in Resources */,
-				B2E7C85728C7B676002661D5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B2E7C86628C7B806002661D5 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B2E7C84828C7B676002661D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2E7C85428C7B676002661D5 /* ViewController.swift in Sources */,
+				B2E7C85428C7B676002661D5 /* SegmentedViewController.swift in Sources */,
+				B2E7C86828C7B9D4002661D5 /* SegmentedView.swift in Sources */,
+				B2E7C87D28C7E229002661D5 /* ViewControllerProtocol.swift in Sources */,
+				B2E7C87928C7C558002661D5 /* POCSegmented.xcdatamodeld in Sources */,
 				B2E7C85028C7B676002661D5 /* AppDelegate.swift in Sources */,
+				B2E7C86A28C7BCD4002661D5 /* CustomViews.swift in Sources */,
 				B2E7C85228C7B676002661D5 /* SceneDelegate.swift in Sources */,
 				B2E7C85A28C7B676002661D5 /* POCSegmented.xcdatamodeld in Sources */,
+				B2E7C87F28C7E259002661D5 /* TestCollectionDataSource.swift in Sources */,
+				B2E7C88128C7E266002661D5 /* TestCollectionDelegate.swift in Sources */,
+				B2E7C87828C7C558002661D5 /* UILabel+setupText.swift in Sources */,
+				B2E7C87728C7C558002661D5 /* LabelInfo.swift in Sources */,
+				B2E7C87B28C7E014002661D5 /* PocSegmentedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B2E7C85528C7B676002661D5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B2E7C85628C7B676002661D5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B2E7C85D28C7B678002661D5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -295,7 +341,6 @@
 				INFOPLIST_FILE = POCSegmented/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,7 +352,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,7 +367,6 @@
 				INFOPLIST_FILE = POCSegmented/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +378,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -369,6 +413,17 @@
 			);
 			currentVersion = B2E7C85928C7B676002661D5 /* POCSegmented.xcdatamodel */;
 			path = POCSegmented.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		B2E7C87528C7C558002661D5 /* POCSegmented.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B2E7C87628C7C558002661D5 /* POCSegmented.xcdatamodel */,
+			);
+			currentVersion = B2E7C87628C7C558002661D5 /* POCSegmented.xcdatamodel */;
+			name = POCSegmented.xcdatamodeld;
+			path = POCSegmented/POCSegmented.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
