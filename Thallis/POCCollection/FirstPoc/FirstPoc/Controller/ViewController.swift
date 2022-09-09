@@ -22,7 +22,9 @@ class ViewController: UIViewController, ViewControllerProtocol, UISearchBarDeleg
     let myView = View()
     
     var coreData: [String] = ["Débora", "Gabriel", "Guilherme", "Leticia", "Muza", "Thallis"]
-        
+    
+    var filteredCoreData = [String]()
+    
     let collectionDataSource = NameCollectionDataSource()
     
     let collectionDelegate = NameCollectionDelegate()
@@ -73,18 +75,25 @@ class ViewController: UIViewController, ViewControllerProtocol, UISearchBarDeleg
     private func configureSearchController() {
         
         self.myView.searchBar.delegate = self
-            }
+    }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         let searchText = searchBar.text
         
-        var filteredData: [String] = []
-    
-        for item in filteredData {
+        var filteredCoreData = coreData
+        
+        if searchText == "" {
+            filteredCoreData = coreData
+        }else{
+            filteredCoreData = []
+            for item in coreData{
+                if item.contains(searchText ?? ""){
+                    filteredCoreData.append(item)
+                    print(item)
+                }
+            }
+            self.myView.nameCollection.reloadData()
             
         }
-        
-        
     }
-    
 }
