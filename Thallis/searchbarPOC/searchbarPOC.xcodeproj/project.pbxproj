@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0667851028C7D81500875B2B /* searchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0667850F28C7D81500875B2B /* searchBarViewController.swift */; };
 		06F90D0A28C7B5A9005A9A54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F90D0928C7B5A9005A9A54 /* AppDelegate.swift */; };
 		06F90D0C28C7B5A9005A9A54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F90D0B28C7B5A9005A9A54 /* SceneDelegate.swift */; };
-		06F90D0E28C7B5A9005A9A54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F90D0D28C7B5A9005A9A54 /* ViewController.swift */; };
 		06F90D1428C7B5A9005A9A54 /* searchbarPOC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06F90D1228C7B5A9005A9A54 /* searchbarPOC.xcdatamodeld */; };
 		06F90D1628C7B5AB005A9A54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F90D1528C7B5AB005A9A54 /* Assets.xcassets */; };
 		06F90D1928C7B5AB005A9A54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06F90D1728C7B5AB005A9A54 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0667850F28C7D81500875B2B /* searchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchBarViewController.swift; sourceTree = "<group>"; };
 		06F90D0628C7B5A9005A9A54 /* searchbarPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = searchbarPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06F90D0928C7B5A9005A9A54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06F90D0B28C7B5A9005A9A54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		06F90D0D28C7B5A9005A9A54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		06F90D1328C7B5A9005A9A54 /* searchbarPOC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = searchbarPOC.xcdatamodel; sourceTree = "<group>"; };
 		06F90D1528C7B5AB005A9A54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06F90D1828C7B5AB005A9A54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,47 @@
 		06F90D0828C7B5A9005A9A54 /* searchbarPOC */ = {
 			isa = PBXGroup;
 			children = (
-				06F90D0928C7B5A9005A9A54 /* AppDelegate.swift */,
-				06F90D0B28C7B5A9005A9A54 /* SceneDelegate.swift */,
-				06F90D0D28C7B5A9005A9A54 /* ViewController.swift */,
-				06F90D1528C7B5AB005A9A54 /* Assets.xcassets */,
+				06F90D2128C7BA3C005A9A54 /* Shared */,
+				06F90D2228C7BA54005A9A54 /* Delegates */,
+				06F90D2428C7BA8B005A9A54 /* Controller */,
 				06F90D1728C7B5AB005A9A54 /* LaunchScreen.storyboard */,
 				06F90D1A28C7B5AB005A9A54 /* Info.plist */,
-				06F90D1228C7B5A9005A9A54 /* searchbarPOC.xcdatamodeld */,
 			);
 			path = searchbarPOC;
+			sourceTree = "<group>";
+		};
+		06F90D2128C7BA3C005A9A54 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				06F90D1228C7B5A9005A9A54 /* searchbarPOC.xcdatamodeld */,
+				06F90D1528C7B5AB005A9A54 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		06F90D2228C7BA54005A9A54 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				06F90D2328C7BA7A005A9A54 /* System */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		06F90D2328C7BA7A005A9A54 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				06F90D0B28C7B5A9005A9A54 /* SceneDelegate.swift */,
+				06F90D0928C7B5A9005A9A54 /* AppDelegate.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		06F90D2428C7BA8B005A9A54 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0667850F28C7D81500875B2B /* searchBarViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,9 +191,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06F90D0E28C7B5A9005A9A54 /* ViewController.swift in Sources */,
 				06F90D0A28C7B5A9005A9A54 /* AppDelegate.swift in Sources */,
 				06F90D1428C7B5A9005A9A54 /* searchbarPOC.xcdatamodeld in Sources */,
+				0667851028C7D81500875B2B /* searchBarViewController.swift in Sources */,
 				06F90D0C28C7B5A9005A9A54 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,7 +338,6 @@
 				INFOPLIST_FILE = searchbarPOC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -333,7 +364,6 @@
 				INFOPLIST_FILE = searchbarPOC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

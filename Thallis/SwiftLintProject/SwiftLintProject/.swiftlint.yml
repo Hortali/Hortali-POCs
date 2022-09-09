@@ -95,11 +95,11 @@ only_rules:
   - yoda_condition
 
 
-line_length: 
+line_length:
     warning: 180
     ignores_comments: true
 
-    
+
 identifier_name:
   excluded:
     - id

@@ -11,13 +11,11 @@ class NameCollectionDataSource: NSObject, UICollectionViewDataSource {
     // Chamada do protocolo para comunicar com a Controller
     var delegateViewController: ViewControllerProtocol?
     
+    var data: [String] = []
+     
     //Data Source
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int { 
-        if let delegate = delegateViewController {
-            return delegate.getDados().count
-        }
-        
-        return 0
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+            return self.data.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -25,9 +23,9 @@ class NameCollectionDataSource: NSObject, UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         
-        if let delegate = delegateViewController {
-            cell.setText(with: delegate.getDados()[indexPath.row])
-        }
+        let dadoDaLinha = self.data[indexPath.row]
+        
+        cell.setText(with: dadoDaLinha)
             
         return cell
     }

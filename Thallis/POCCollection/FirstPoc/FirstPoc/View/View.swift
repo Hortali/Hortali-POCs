@@ -10,9 +10,18 @@ import UIKit
 
 class View: UIView {
     
+    // MARK: - Função para declarar a searchBar
+    public let searchBar: UISearchBar = {
+        let sBar = UISearchBar()
+        sBar.translatesAutoresizingMaskIntoConstraints = false
+        
+        sBar.searchTextField.setupPlaceHolder(text: "Nome da pessoa desejada", color: .systemGray)
+        return sBar
+    }()
+    
     /// Título da tela
     public let titleLabel: UILabel = CustomViews.newLabel()
-
+    
     /// Mostra a informação selecionada
     public let selectedLabel: UILabel = CustomViews.newLabel()
     
@@ -48,7 +57,7 @@ class View: UIView {
     private func registerCells() {
         self.nameCollection.register(ViewCell.self, forCellWithReuseIdentifier: ViewCell.identifier)
     }
-
+    
     /// Define o layout que as collections terão
     private func setupCollectionFlows() {
         self.nameCollection.collectionViewLayout = self.collectionFlow
@@ -59,14 +68,21 @@ class View: UIView {
         self.addSubview(self.titleLabel)
         self.addSubview(self.selectedLabel)
         self.addSubview(self.nameCollection)
+        self.addSubview(searchBar)
     }
     
     // Atribui os textos e suas características
     private func staticText() {
         self.titleLabel.setupText(with: LabelInfo(text: "Nomes legais",
-                                                     size: 24,
-                                                     weight: .medium))
+                                                  size: 24,
+                                                  weight: .medium))
         
+    }
+    
+    // MARK:  Novo - irá atualizar as informações da collection quando tiver novos dados
+    public func reloadCollection() {
+        self.nameCollection.reloadData()
+        self.nameCollection.reloadInputViews()
     }
     
     public func setSelectedLabelText(text: String) {
@@ -82,10 +98,10 @@ class View: UIView {
     }
     
     private func nameCollectionView() {
+        
     }
     
-    
-    /// Define as constraints das células da CollectionView
+    // Define as constraints das células da CollectionView
     private func setupConstraints() {
         let sideSpace: CGFloat = self.bounds.height * 0.02
         let space: CGFloat = 16
@@ -94,26 +110,30 @@ class View: UIView {
         NSLayoutConstraint.deactivate(self.dynamicConstraint)
         
         self.dynamicConstraint = ([
-        self.titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: space),
-        self.titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -space),
-        self.titleLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 16),
-        self.titleLabel.heightAnchor.constraint(equalToConstant: 30),
-        
-        self.selectedLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: sideSpace * 2),
-        self.selectedLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -sideSpace * 2),
-        self.selectedLabel.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: space),
-        self.selectedLabel.heightAnchor.constraint(equalToConstant: 30),
-        
-        self.nameCollection.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: sideSpace),
-        self.nameCollection.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -sideSpace),
-        self.nameCollection.topAnchor.constraint(equalTo: self.selectedLabel.bottomAnchor, constant: space),
-        self.nameCollection.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: space)
-       ])
+            self.titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: space),
+            self.titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -space),
+            self.titleLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 16),
+            self.titleLabel.heightAnchor.constraint(equalToConstant: 30),
+            
+            self.searchBar.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: sideSpace),
+            self.searchBar.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -sideSpace),
+            self.searchBar.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: space),
+            
+            self.selectedLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: sideSpace * 2),
+            self.selectedLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -sideSpace * 2),
+            self.selectedLabel.topAnchor.constraint(equalTo: self.searchBar.bottomAnchor, constant: space),
+            self.selectedLabel.heightAnchor.constraint(equalToConstant: 30),
+            
+            self.nameCollection.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: sideSpace),
+            self.nameCollection.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -sideSpace),
+            self.nameCollection.topAnchor.constraint(equalTo: self.selectedLabel.bottomAnchor, constant: space),
+            self.nameCollection.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: space)
+        ])
         // Ativa todas as constraints da tela
         NSLayoutConstraint.activate(self.dynamicConstraint)
-   }
+    }
     
-        //Função para definir as características da UI
+    //Função para definir as características da UI
     private func setupUI() {
         self.backgroundColor = .systemBackground
         
@@ -122,11 +142,9 @@ class View: UIView {
         self.titleLabel.layer.cornerRadius = corners
         self.selectedLabel.layer.cornerRadius = corners
         self.nameCollection.layer.cornerRadius = corners * 2
-        
-        
-        
     }
     
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented)")}
-
+    
 }
+

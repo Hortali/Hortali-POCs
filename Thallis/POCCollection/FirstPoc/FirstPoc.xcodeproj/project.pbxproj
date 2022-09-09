@@ -19,6 +19,8 @@
 		0681FA7D28B69F81006C3E51 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0681FA7C28B69F81006C3E51 /* View.swift */; };
 		0681FA7F28B6A015006C3E51 /* ViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0681FA7E28B6A015006C3E51 /* ViewCell.swift */; };
 		0681FA8228B6B1FA006C3E51 /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0681FA8128B6B1FA006C3E51 /* CustomViews.swift */; };
+		06BD1C8A28CA670E00C948D6 /* UITextField+SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BD1C8928CA670E00C948D6 /* UITextField+SearchBar.swift */; };
+		06BD1C8F28CBD51A00C948D6 /* SearchbarProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BD1C8E28CBD51900C948D6 /* SearchbarProtocol.swift */; };
 		06C6D1FA28BEA7F100B59681 /* NameCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C6D1F928BEA7F100B59681 /* NameCollectionDelegate.swift */; };
 		06C6D1FC28BEA89700B59681 /* NameCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C6D1FB28BEA89700B59681 /* NameCollectionDataSource.swift */; };
 		06EAB1E428C668F9005C2B71 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EAB1E328C668F9005C2B71 /* MainTabBarController.swift */; };
@@ -39,6 +41,8 @@
 		0681FA7C28B69F81006C3E51 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		0681FA7E28B6A015006C3E51 /* ViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCell.swift; sourceTree = "<group>"; };
 		0681FA8128B6B1FA006C3E51 /* CustomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
+		06BD1C8928CA670E00C948D6 /* UITextField+SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SearchBar.swift"; sourceTree = "<group>"; };
+		06BD1C8E28CBD51900C948D6 /* SearchbarProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchbarProtocol.swift; sourceTree = "<group>"; };
 		06C6D1F928BEA7F100B59681 /* NameCollectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCollectionDelegate.swift; sourceTree = "<group>"; };
 		06C6D1FB28BEA89700B59681 /* NameCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCollectionDataSource.swift; sourceTree = "<group>"; };
 		06EAB1E328C668F9005C2B71 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				0609FF8828B81464006B248A /* UILabel+setupText.swift */,
+				06BD1C8928CA670E00C948D6 /* UITextField+SearchBar.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 		0657895F28B5765B0025244C /* FirstPoc */ = {
 			isa = PBXGroup;
 			children = (
+				06BD1C8D28CBD4DC00C948D6 /* Protocols */,
 				063B3FDD28B95B1D0093DCCC /* Controller */,
 				063B3FDC28B95B180093DCCC /* View */,
 				063B3FDB28B95B140093DCCC /* Cell */,
@@ -190,6 +196,14 @@
 				0657896928B5765B0025244C /* FirstPoc.xcdatamodeld */,
 			);
 			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		06BD1C8D28CBD4DC00C948D6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				06BD1C8E28CBD51900C948D6 /* SearchbarProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		06C6D1F828BEA7D000B59681 /* Delegates */ = {
@@ -292,7 +306,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "
+";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -310,9 +325,11 @@
 				0681FA8228B6B1FA006C3E51 /* CustomViews.swift in Sources */,
 				06EAB1E428C668F9005C2B71 /* MainTabBarController.swift in Sources */,
 				06C6D1FA28BEA7F100B59681 /* NameCollectionDelegate.swift in Sources */,
+				06BD1C8A28CA670E00C948D6 /* UITextField+SearchBar.swift in Sources */,
 				0657896128B5765B0025244C /* AppDelegate.swift in Sources */,
 				0681FA7D28B69F81006C3E51 /* View.swift in Sources */,
 				0657896328B5765B0025244C /* SceneDelegate.swift in Sources */,
+				06BD1C8F28CBD51A00C948D6 /* SearchbarProtocol.swift in Sources */,
 				0657896B28B5765B0025244C /* FirstPoc.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
