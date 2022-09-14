@@ -50,6 +50,11 @@ class SearchView: UIView {
     
     /* MARK: - Encapsulamento */
 
+    /// Vai atualizar a colllection quando tiver novos dados
+    public func reloadCollection() {
+        self.nameCollection.reloadData()
+        self.nameCollection.reloadInputViews()
+    }
     
     
 
@@ -71,7 +76,7 @@ class SearchView: UIView {
     
     /// Registra as células nas collections/table
     private func registerCells() {
-        
+        self.nameCollection.register(NameCell.self, forCellWithReuseIdentifier: NameCell.identifier)
     }
 
 
@@ -93,10 +98,12 @@ class SearchView: UIView {
     
     /// Personalização da UI
     private func setupUI() {
-        self.nameCollection.backgroundColor = .systemBackground
-        self.nameCollection.layer.cornerRadius = 25
+        self.backgroundColor = UIColor(.viewBack)
         
-        self.collectionFlow.itemSize = CGSize(width: 100, height: 100)
+        self.nameCollection.backgroundColor = UIColor(.viewBack)
+        // self.nameCollection.layer.cornerRadius = 25
+        
+        self.collectionFlow.itemSize = CGSize(width: 110, height: 110)
     }
     
     

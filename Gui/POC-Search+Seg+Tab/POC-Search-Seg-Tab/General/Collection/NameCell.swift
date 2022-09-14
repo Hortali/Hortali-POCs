@@ -15,7 +15,15 @@ class NameCell: UICollectionViewCell {
 
     // Views
     
-    private let nameLabel = CustomViews.newLabel()
+    private let nameLabel: UILabel = {
+        let lbl = CustomViews.newLabel()
+        lbl.textAlignment = .center
+        lbl.adjustsFontSizeToFitWidth = true
+        lbl.numberOfLines = 2
+        
+        lbl.backgroundColor = UIColor(originalColor: .greenLight)
+        return lbl
+    }()
     
 
     // Outros
@@ -67,6 +75,7 @@ class NameCell: UICollectionViewCell {
     
     /// Personalização da UI
     private func setupUI() {
+        self.layer.masksToBounds = true
         self.layer.cornerRadius = 20
     }
     
@@ -74,20 +83,20 @@ class NameCell: UICollectionViewCell {
     /// Define os textos que são estáticos (os textos em si que vão sempre ser o mesmo)
     private func setupStaticTexts() {		
         self.nameLabel.setupText(with: FontInfo(
-            fontSize: 15, weight: .medium
+            fontSize: 25, weight: .medium
         ))
     }
 	  
     
     /// Define as constraints que dependem do tamanho da tela
-    private func setupDynamicConstraints() { 
-//        let lateral: CGFloat =
-//        let between: CGFloat =
-       
+    private func setupDynamicConstraints() {
         NSLayoutConstraint.deactivate(self.dynamicConstraints)
     
         self.dynamicConstraints = [
-            self.nameLabel.topAnchor
+            self.nameLabel.topAnchor.constraint(equalTo: self.contentView.topAnchor),
+            self.nameLabel.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor),
+            self.nameLabel.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor),
+            self.nameLabel.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor),
         ]
         
         NSLayoutConstraint.activate(self.dynamicConstraints)
