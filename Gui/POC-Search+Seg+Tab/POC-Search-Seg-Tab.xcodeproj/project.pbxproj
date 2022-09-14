@@ -177,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				2229394028CB82A900515095 /* Protocol */,
+				2229393928CB817900515095 /* Data Source */,
 				2229393828CB816D00515095 /* Delegate */,
 				2229389028CB7A2700515095 /* View */,
 				2229393628CB815700515095 /* SearchController.swift */,
@@ -428,6 +429,13 @@
 				2229393C28CB823100515095 /* SearchDelegate.swift */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		2229393928CB817900515095 /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Source";
 			sourceTree = "<group>";
 		};
 		2229394028CB82A900515095 /* Protocol */ = {

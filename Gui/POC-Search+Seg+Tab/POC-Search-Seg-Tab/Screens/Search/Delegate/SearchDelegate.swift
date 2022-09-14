@@ -31,4 +31,5 @@ class SearchDelegate: NSObject, UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         self.searchControllerProtocol?.updateCollection(for: searchText)
     }
+
 }

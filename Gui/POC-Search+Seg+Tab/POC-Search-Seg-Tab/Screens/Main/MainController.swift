@@ -22,8 +22,8 @@ class MainController: UITabBarController {
     static let allAcademyStudents: [String] = [
         "Anna", "Bia", "Bianca", "Carol Ortega", "Carol Taus", "Claudinha", "Debora", "Felipe", "Fran", "Gabi", "Gabriel Bahia", "Gabriel Batista", "Gui Reis", "Pimenta", "Juh Santana", "Leh", "Luca", "Pera", "Marcus Chevis", "Marcus Vinicius", "Mari", "Muza", "Nathy", "Rafael", "Rebecca", "Talita", "Thallis", "Vitor GK",
     ]
-
     
+
     
     /* MARK: - Ciclo de Vida */
     

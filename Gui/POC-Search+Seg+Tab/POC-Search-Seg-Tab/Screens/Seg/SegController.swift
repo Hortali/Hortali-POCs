@@ -20,7 +20,6 @@ class SegController: UIViewController {
     private let segNameDataSource = NameCollectionDataSource()
 
 		
-    
     /* MARK: - Ciclo de Vida */
     
     override func loadView() {

@@ -92,19 +92,15 @@ struct CustomViews {
     }
     
     
-    /// Cria uma segmentation control de acordo com a padronização do projeto
-    /// - Parameter itens: itens que a segmentation pode ter caso for do tipo menu
-    /// - Returns: Retorna uma segmentation personalizada
-    static func newSegmentation(with itens: [String]?) -> UISegmentedControl {
-        var seg = UISegmentedControl()
-        
-        if let itens = itens {
-            seg = UISegmentedControl(items: itens)
-            seg.selectedSegmentTintColor = UIColor(.segBackSelected)
-            seg.backgroundColor = UIColor(.segBackNotSelected)
-        }
-    
+    static func newSeg() -> UISegmentedControl {
+        let itensSeg = ["A", "B", "C"]
+        let seg = UISegmentedControl(items: itensSeg)
         seg.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+        seg.selectedSegmentTintColor = UIColor(.segBackSelected)
+        seg.backgroundColor = UIColor(.segBackNotSelected)
+        
         return seg
     }
  }

@@ -11,10 +11,7 @@ class SegView: UIView {
 
     // Views
     
-    public let seg: UISegmentedControl = {
-        let itens: [String] = ["A", "B", "C"]
-        return CustomViews.newSegmentation(with: itens)
-    }()
+    public let seg = CustomViews.newSeg()
     
     public let titleLabel = CustomViews.newLabel()
     
@@ -45,6 +42,8 @@ class SegView: UIView {
         self.setupViews()
         self.registerCells()
         self.setupCollectionFlow()
+        
+        // self.configSegmentation()
     }
     
     required init?(coder: NSCoder) {fatalError("init(coder:) has not been implemented")}
