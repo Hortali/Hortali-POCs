@@ -3,6 +3,20 @@
 
 POCs desenvolvidas durante o macro.
 
+## Gui
+Assunto   | Descrição
+--------- | ---------
+[POC-Collection](https://github.com/Super-Macro/POCs/tree/main/Gui/POC-Collection) | Atividade proposta do grupo para collection
+[Search+Seg+Tab](https://github.com/Super-Macro/POCs/tree/main/Gui/Guia_Front-Swift) | Entendendo sobre search bar e segmentation control
+[Guia Front-Swift](https://github.com/Super-Macro/POCs/tree/main/Gui/POC-Search%2BSeg%2BTab) | Projeto usado de base para criação do passo a passo para criar um front em Swift
+
+## Thallis
+Assunto   | Descrição
+--------- | ---------
+[POC-Collection](https://github.com/Super-Macro/POCs/tree/main/Thallis/POCCollection/FirstPoc) | Atividade proposta do grupo para collection
+[Swift Lint](https://github.com/Super-Macro/POCs/tree/main/Thallis/SwiftLintProject) | Pré aplicação do swift lint para o projeto.
+
+
 ## Time
 <table>
     <tr>
