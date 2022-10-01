@@ -18,9 +18,9 @@ public class Alimento: NSManagedObject, Identifiable {
     @NSManaged public var vitaminas: NSSet?
     
     
-    /// Vitmainas ligadas ao alimento
+    /// Vitamainas ligadas ao alimento
     public var vitaminasArray: [Vitamina] {
-        let set = vitaminas as? Set<Vitamina> ?? []
+        let set = self.vitaminas as? Set<Vitamina> ?? []
         return set.sorted {
             $0.id < $1.id
         }
@@ -33,6 +33,7 @@ public class Alimento: NSManagedObject, Identifiable {
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Alimento> {
         return NSFetchRequest<Alimento>(entityName: "Alimento")
     }
+    
     
     
     /* MARK: - Métodos (Relacionamento)*/

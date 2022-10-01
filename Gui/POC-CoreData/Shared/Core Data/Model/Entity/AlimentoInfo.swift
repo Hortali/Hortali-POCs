@@ -4,4 +4,5 @@
 /// Qual objetivo dessa struct?
 struct AlimentoInfo {
     let nome: String
+    let vitaminas: [VitaminaInfo]
 }

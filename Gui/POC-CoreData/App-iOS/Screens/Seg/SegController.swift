@@ -37,6 +37,11 @@ class SegController: UIViewController {
         self.setCollectionData(for: MainController.allAcademyStudents)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        print("\n\n\n>>>Seg<<<\n\n")
+        self.setupCoreData()
+    }
+    
 
 
     /* MARK: - Protocolo */
@@ -104,5 +109,55 @@ class SegController: UIViewController {
     /// Definindo os delegates, data sources e protocolos
     private func setupDelegates() {
         self.myView.nameCollection.dataSource = self.segNameDataSource
+    }
+    
+    
+    
+    
+    private func setupCoreData() {
+        let key = "seg"
+        let userDefaults = UserDefaults.standard.bool(forKey: key)
+                
+        
+        if !userDefaults {
+            let foods = ["SEG Morango", "SEG Batata", "SEG Abacaxi"]
+            for item in foods {
+                let infos = AlimentoInfo(
+                    nome: item,
+                    vitaminas: [
+                        VitaminaInfo(tipo: "A"),
+                        VitaminaInfo(tipo: "B"),
+                        VitaminaInfo(tipo: "C")
+                    ]
+                )
+                
+                AlimentoCDManager.shared.addNewData(with: infos)
+            }
+            
+            UserDefaults.standard.set(true, forKey: key)
+        }
+        
+        self.prettyPrint()
+    }
+    
+    
+    private func prettyPrint() {
+        for data in AlimentoCDManager.shared.getAllData() {
+            print("""
+            \(data.nome)
+            \(self.getVitaminasPrint(for: data.vitaminas))
+            """)
+        }
+    }
+    
+    
+    private func getVitaminasPrint(for vitaminas: [VitaminaInfo]) -> String {
+        var str = ""
+        
+        for vitamina in vitaminas {
+            str.append("Vitamina \(vitamina.tipo)\n")
+        }
+        
+        return str
     }
 }

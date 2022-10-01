@@ -50,14 +50,10 @@
 		2229394528CB9F7500515095 /* SegController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229394428CB9F7500515095 /* SegController.swift */; };
 		2229394728CB9F8500515095 /* SegView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229394628CB9F8500515095 /* SegView.swift */; };
 		222C122228E6177E005DB191 /* AlimentoCDManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C122128E6177E005DB191 /* AlimentoCDManeger.swift */; };
-		222C122428E617CA005DB191 /* CoreDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C122328E617CA005DB191 /* CoreDataInfo.swift */; };
 		222C122728E61885005DB191 /* AlimentoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C122628E61885005DB191 /* AlimentoInfo.swift */; };
-		222C122B28E6197B005DB191 /* VitaminasCDManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C122A28E6197B005DB191 /* VitaminasCDManeger.swift */; };
 		222C122D28E619BF005DB191 /* VitaminaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C122C28E619BF005DB191 /* VitaminaInfo.swift */; };
 		22973F7128E625880033D0F4 /* Alimento+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22973F6D28E625880033D0F4 /* Alimento+CoreDataClass.swift */; };
-		22973F7228E625880033D0F4 /* Alimento+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22973F6E28E625880033D0F4 /* Alimento+CoreDataProperties.swift */; };
 		22973F7328E625880033D0F4 /* Vitamina+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22973F6F28E625880033D0F4 /* Vitamina+CoreDataClass.swift */; };
-		22973F7428E625880033D0F4 /* Vitamina+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22973F7028E625880033D0F4 /* Vitamina+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,14 +102,10 @@
 		2229394428CB9F7500515095 /* SegController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegController.swift; sourceTree = "<group>"; };
 		2229394628CB9F8500515095 /* SegView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegView.swift; sourceTree = "<group>"; };
 		222C122128E6177E005DB191 /* AlimentoCDManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlimentoCDManeger.swift; sourceTree = "<group>"; };
-		222C122328E617CA005DB191 /* CoreDataInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataInfo.swift; sourceTree = "<group>"; };
 		222C122628E61885005DB191 /* AlimentoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlimentoInfo.swift; sourceTree = "<group>"; };
-		222C122A28E6197B005DB191 /* VitaminasCDManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitaminasCDManeger.swift; sourceTree = "<group>"; };
 		222C122C28E619BF005DB191 /* VitaminaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitaminaInfo.swift; sourceTree = "<group>"; };
 		22973F6D28E625880033D0F4 /* Alimento+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alimento+CoreDataClass.swift"; sourceTree = "<group>"; };
-		22973F6E28E625880033D0F4 /* Alimento+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alimento+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		22973F6F28E625880033D0F4 /* Vitamina+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vitamina+CoreDataClass.swift"; sourceTree = "<group>"; };
-		22973F7028E625880033D0F4 /* Vitamina+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vitamina+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,7 +187,6 @@
 			isa = PBXGroup;
 			children = (
 				2229394028CB82A900515095 /* Protocol */,
-				2229393928CB817900515095 /* Data Source */,
 				2229393828CB816D00515095 /* Delegate */,
 				2229389028CB7A2700515095 /* View */,
 				2229393628CB815700515095 /* SearchController.swift */,
@@ -250,9 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				22973F6D28E625880033D0F4 /* Alimento+CoreDataClass.swift */,
-				22973F6E28E625880033D0F4 /* Alimento+CoreDataProperties.swift */,
 				22973F6F28E625880033D0F4 /* Vitamina+CoreDataClass.swift */,
-				22973F7028E625880033D0F4 /* Vitamina+CoreDataProperties.swift */,
 				2229387C28CB79AA00515095 /* Banco.xcdatamodeld */,
 				222C122528E61873005DB191 /* Model */,
 				222C122828E61937005DB191 /* Maneger */,
@@ -455,13 +444,6 @@
 			path = Delegate;
 			sourceTree = "<group>";
 		};
-		2229393928CB817900515095 /* Data Source */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Data Source";
-			sourceTree = "<group>";
-		};
 		2229394028CB82A900515095 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
@@ -483,7 +465,6 @@
 			isa = PBXGroup;
 			children = (
 				222C122928E61948005DB191 /* Entity */,
-				222C122328E617CA005DB191 /* CoreDataInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -492,7 +473,6 @@
 			isa = PBXGroup;
 			children = (
 				222C122128E6177E005DB191 /* AlimentoCDManeger.swift */,
-				222C122A28E6197B005DB191 /* VitaminasCDManeger.swift */,
 			);
 			path = Maneger;
 			sourceTree = "<group>";
@@ -586,7 +566,6 @@
 				2229391128CB7DF100515095 /* AppIcons.swift in Sources */,
 				2229392F28CB7E3A00515095 /* UITextField+setupPlaceHolder.swift in Sources */,
 				222938F328CB7DE500515095 /* AdaptiveLayout.swift in Sources */,
-				222C122428E617CA005DB191 /* CoreDataInfo.swift in Sources */,
 				2229394728CB9F8500515095 /* SegView.swift in Sources */,
 				2229393228CB7E6600515095 /* SearchView.swift in Sources */,
 				2229393028CB7E3A00515095 /* UIViewController+setupTab.swift in Sources */,
@@ -595,7 +574,6 @@
 				22973F7128E625880033D0F4 /* Alimento+CoreDataClass.swift in Sources */,
 				2229393528CB7FF500515095 /* NameCell.swift in Sources */,
 				2229391528CB7DF100515095 /* UIButton+FontInfo.swift in Sources */,
-				22973F7428E625880033D0F4 /* Vitamina+CoreDataProperties.swift in Sources */,
 				2229392728CB7DF600515095 /* ContainerView.swift in Sources */,
 				22973F7328E625880033D0F4 /* Vitamina+CoreDataClass.swift in Sources */,
 				222C122728E61885005DB191 /* AlimentoInfo.swift in Sources */,
@@ -605,7 +583,6 @@
 				2229391728CB7DF100515095 /* UITextField+FontInfo.swift in Sources */,
 				2229394228CB82CD00515095 /* SearchControllerProtocol.swift in Sources */,
 				2229391228CB7DF100515095 /* UIImage+AppIcons.swift in Sources */,
-				22973F7228E625880033D0F4 /* Alimento+CoreDataProperties.swift in Sources */,
 				2229394528CB9F7500515095 /* SegController.swift in Sources */,
 				2229387E28CB79AA00515095 /* Banco.xcdatamodeld in Sources */,
 				222938F528CB7DE500515095 /* Screens.swift in Sources */,
@@ -614,7 +591,6 @@
 				222C122D28E619BF005DB191 /* VitaminaInfo.swift in Sources */,
 				2229392E28CB7E3A00515095 /* UITextField+setupIconsColor.swift in Sources */,
 				2229392628CB7DF600515095 /* MainView.swift in Sources */,
-				222C122B28E6197B005DB191 /* VitaminasCDManeger.swift in Sources */,
 				222938F428CB7DE500515095 /* UIView+AdpativeLayout.swift in Sources */,
 				2229392428CB7DF600515095 /* CollectionGroupStyle.swift in Sources */,
 				222938F628CB7DE500515095 /* Dimension.swift in Sources */,

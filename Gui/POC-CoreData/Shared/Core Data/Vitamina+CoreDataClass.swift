@@ -6,10 +6,16 @@
 //
 //
 
-import Foundation
 import CoreData
 
 @objc(Vitamina)
-public class Vitamina: NSManagedObject {
+public class Vitamina: NSManagedObject, Identifiable {
+    
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<Vitamina> {
+        return NSFetchRequest<Vitamina>(entityName: "Vitamina")
+    }
 
+    @NSManaged public var id: UUID?
+    @NSManaged public var tipo: String?
+    @NSManaged public var alimento: Alimento?
 }
