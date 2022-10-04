@@ -49,10 +49,16 @@
 		2229394228CB82CD00515095 /* SearchControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229394128CB82CD00515095 /* SearchControllerProtocol.swift */; };
 		2229394528CB9F7500515095 /* SegController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229394428CB9F7500515095 /* SegController.swift */; };
 		2229394728CB9F8500515095 /* SegView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229394628CB9F8500515095 /* SegView.swift */; };
-		222C122228E6177E005DB191 /* AlimentoCDManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C122128E6177E005DB191 /* AlimentoCDManeger.swift */; };
-		222C122728E61885005DB191 /* AlimentoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C122628E61885005DB191 /* AlimentoInfo.swift */; };
+		222C122228E6177E005DB191 /* FoodCDManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C122128E6177E005DB191 /* FoodCDManeger.swift */; };
+		222C122728E61885005DB191 /* FoodInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C122628E61885005DB191 /* FoodInfo.swift */; };
 		222C122D28E619BF005DB191 /* VitaminaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C122C28E619BF005DB191 /* VitaminaInfo.swift */; };
-		22973F7128E625880033D0F4 /* Alimento+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22973F6D28E625880033D0F4 /* Alimento+CoreDataClass.swift */; };
+		224F7B7728E8DB1F007991F6 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224F7B7628E8DB1F007991F6 /* Models.swift */; };
+		224F7B7D28EBED58007991F6 /* FavoriteCDManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224F7B7C28EBED58007991F6 /* FavoriteCDManeger.swift */; };
+		224F7B7F28EBED95007991F6 /* CDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224F7B7E28EBED95007991F6 /* CDManager.swift */; };
+		224F7B8228EBEE5C007991F6 /* CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224F7B8128EBEE5C007991F6 /* CoreDataProperties.swift */; };
+		224F7B8528EBF141007991F6 /* ErrorCDHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224F7B8428EBF141007991F6 /* ErrorCDHandler.swift */; };
+		224F7B8728ECABE8007991F6 /* VitaminsCDManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224F7B8628ECABE8007991F6 /* VitaminsCDManeger.swift */; };
+		22973F7128E625880033D0F4 /* Food+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22973F6D28E625880033D0F4 /* Food+CoreDataClass.swift */; };
 		22973F7328E625880033D0F4 /* Vitamina+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22973F6F28E625880033D0F4 /* Vitamina+CoreDataClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -101,10 +107,16 @@
 		2229394128CB82CD00515095 /* SearchControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchControllerProtocol.swift; sourceTree = "<group>"; };
 		2229394428CB9F7500515095 /* SegController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegController.swift; sourceTree = "<group>"; };
 		2229394628CB9F8500515095 /* SegView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegView.swift; sourceTree = "<group>"; };
-		222C122128E6177E005DB191 /* AlimentoCDManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlimentoCDManeger.swift; sourceTree = "<group>"; };
-		222C122628E61885005DB191 /* AlimentoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlimentoInfo.swift; sourceTree = "<group>"; };
+		222C122128E6177E005DB191 /* FoodCDManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCDManeger.swift; sourceTree = "<group>"; };
+		222C122628E61885005DB191 /* FoodInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodInfo.swift; sourceTree = "<group>"; };
 		222C122C28E619BF005DB191 /* VitaminaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitaminaInfo.swift; sourceTree = "<group>"; };
-		22973F6D28E625880033D0F4 /* Alimento+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alimento+CoreDataClass.swift"; sourceTree = "<group>"; };
+		224F7B7628E8DB1F007991F6 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		224F7B7C28EBED58007991F6 /* FavoriteCDManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCDManeger.swift; sourceTree = "<group>"; };
+		224F7B7E28EBED95007991F6 /* CDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDManager.swift; sourceTree = "<group>"; };
+		224F7B8128EBEE5C007991F6 /* CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProperties.swift; sourceTree = "<group>"; };
+		224F7B8428EBF141007991F6 /* ErrorCDHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCDHandler.swift; sourceTree = "<group>"; };
+		224F7B8628ECABE8007991F6 /* VitaminsCDManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitaminsCDManeger.swift; sourceTree = "<group>"; };
+		22973F6D28E625880033D0F4 /* Food+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Food+CoreDataClass.swift"; sourceTree = "<group>"; };
 		22973F6F28E625880033D0F4 /* Vitamina+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vitamina+CoreDataClass.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -222,6 +234,7 @@
 		2229389228CB7A4300515095 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				224F7B8328EBF12B007991F6 /* ErrorsHandler */,
 				222938E728CB7DDC00515095 /* Desgin System */,
 				2229389328CB7A4800515095 /* Assets */,
 				2229389428CB7A5100515095 /* Core Data */,
@@ -240,10 +253,10 @@
 		2229389428CB7A5100515095 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				22973F6D28E625880033D0F4 /* Alimento+CoreDataClass.swift */,
-				22973F6F28E625880033D0F4 /* Vitamina+CoreDataClass.swift */,
 				2229387C28CB79AA00515095 /* Banco.xcdatamodeld */,
+				224F7B8828ECB97A007991F6 /* Entities */,
 				222C122528E61873005DB191 /* Model */,
+				224F7B8028EBEDE6007991F6 /* Protocols */,
 				222C122828E61937005DB191 /* Maneger */,
 			);
 			path = "Core Data";
@@ -464,7 +477,9 @@
 		222C122528E61873005DB191 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				222C122928E61948005DB191 /* Entity */,
+				222C122628E61885005DB191 /* FoodInfo.swift */,
+				222C122C28E619BF005DB191 /* VitaminaInfo.swift */,
+				224F7B7628E8DB1F007991F6 /* Models.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -472,18 +487,45 @@
 		222C122828E61937005DB191 /* Maneger */ = {
 			isa = PBXGroup;
 			children = (
-				222C122128E6177E005DB191 /* AlimentoCDManeger.swift */,
+				224F7B7E28EBED95007991F6 /* CDManager.swift */,
+				224F7B7B28EBED2F007991F6 /* Manegers */,
 			);
 			path = Maneger;
 			sourceTree = "<group>";
 		};
-		222C122928E61948005DB191 /* Entity */ = {
+		224F7B7B28EBED2F007991F6 /* Manegers */ = {
 			isa = PBXGroup;
 			children = (
-				222C122628E61885005DB191 /* AlimentoInfo.swift */,
-				222C122C28E619BF005DB191 /* VitaminaInfo.swift */,
+				222C122128E6177E005DB191 /* FoodCDManeger.swift */,
+				224F7B7C28EBED58007991F6 /* FavoriteCDManeger.swift */,
+				224F7B8628ECABE8007991F6 /* VitaminsCDManeger.swift */,
 			);
-			path = Entity;
+			path = Manegers;
+			sourceTree = "<group>";
+		};
+		224F7B8028EBEDE6007991F6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				224F7B8128EBEE5C007991F6 /* CoreDataProperties.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		224F7B8328EBF12B007991F6 /* ErrorsHandler */ = {
+			isa = PBXGroup;
+			children = (
+				224F7B8428EBF141007991F6 /* ErrorCDHandler.swift */,
+			);
+			path = ErrorsHandler;
+			sourceTree = "<group>";
+		};
+		224F7B8828ECB97A007991F6 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				22973F6D28E625880033D0F4 /* Food+CoreDataClass.swift */,
+				22973F6F28E625880033D0F4 /* Vitamina+CoreDataClass.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -567,29 +609,33 @@
 				2229392F28CB7E3A00515095 /* UITextField+setupPlaceHolder.swift in Sources */,
 				222938F328CB7DE500515095 /* AdaptiveLayout.swift in Sources */,
 				2229394728CB9F8500515095 /* SegView.swift in Sources */,
+				224F7B7728E8DB1F007991F6 /* Models.swift in Sources */,
 				2229393228CB7E6600515095 /* SearchView.swift in Sources */,
 				2229393028CB7E3A00515095 /* UIViewController+setupTab.swift in Sources */,
 				2229392528CB7DF600515095 /* CollectionGroup.swift in Sources */,
+				224F7B8228EBEE5C007991F6 /* CoreDataProperties.swift in Sources */,
 				2229391428CB7DF100515095 /* IconInfo.swift in Sources */,
-				22973F7128E625880033D0F4 /* Alimento+CoreDataClass.swift in Sources */,
+				22973F7128E625880033D0F4 /* Food+CoreDataClass.swift in Sources */,
 				2229393528CB7FF500515095 /* NameCell.swift in Sources */,
 				2229391528CB7DF100515095 /* UIButton+FontInfo.swift in Sources */,
 				2229392728CB7DF600515095 /* ContainerView.swift in Sources */,
 				22973F7328E625880033D0F4 /* Vitamina+CoreDataClass.swift in Sources */,
-				222C122728E61885005DB191 /* AlimentoInfo.swift in Sources */,
+				222C122728E61885005DB191 /* FoodInfo.swift in Sources */,
 				2229390F28CB7DF100515095 /* AppPureColors.swift in Sources */,
 				2229392928CB7DF600515095 /* CustomButton.swift in Sources */,
 				2229393B28CB819500515095 /* NameCollectionDataSource.swift in Sources */,
 				2229391728CB7DF100515095 /* UITextField+FontInfo.swift in Sources */,
 				2229394228CB82CD00515095 /* SearchControllerProtocol.swift in Sources */,
 				2229391228CB7DF100515095 /* UIImage+AppIcons.swift in Sources */,
+				224F7B7F28EBED95007991F6 /* CDManager.swift in Sources */,
 				2229394528CB9F7500515095 /* SegController.swift in Sources */,
 				2229387E28CB79AA00515095 /* Banco.xcdatamodeld in Sources */,
 				222938F528CB7DE500515095 /* Screens.swift in Sources */,
-				222C122228E6177E005DB191 /* AlimentoCDManeger.swift in Sources */,
+				222C122228E6177E005DB191 /* FoodCDManeger.swift in Sources */,
 				2229391628CB7DF100515095 /* UIFont+setupFont.swift in Sources */,
 				222C122D28E619BF005DB191 /* VitaminaInfo.swift in Sources */,
 				2229392E28CB7E3A00515095 /* UITextField+setupIconsColor.swift in Sources */,
+				224F7B8528EBF141007991F6 /* ErrorCDHandler.swift in Sources */,
 				2229392628CB7DF600515095 /* MainView.swift in Sources */,
 				222938F428CB7DE500515095 /* UIView+AdpativeLayout.swift in Sources */,
 				2229392428CB7DF600515095 /* CollectionGroupStyle.swift in Sources */,
@@ -599,6 +645,8 @@
 				2229393728CB815700515095 /* SearchController.swift in Sources */,
 				2229393D28CB823100515095 /* SearchDelegate.swift in Sources */,
 				2229387628CB79AA00515095 /* SceneDelegate.swift in Sources */,
+				224F7B8728ECABE8007991F6 /* VitaminsCDManeger.swift in Sources */,
+				224F7B7D28EBED58007991F6 /* FavoriteCDManeger.swift in Sources */,
 				2229391828CB7DF100515095 /* UILabel+FontInfo.swift in Sources */,
 				2229391028CB7DF100515095 /* OrginalColor.swift in Sources */,
 			);

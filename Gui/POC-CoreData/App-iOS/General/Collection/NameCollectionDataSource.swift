@@ -9,7 +9,6 @@ class NameCollectionDataSource: NSObject, UICollectionViewDataSource {
         
     /* MARK: - Atributos */
     
-    
     public var collectionData: [String] = []
 
 

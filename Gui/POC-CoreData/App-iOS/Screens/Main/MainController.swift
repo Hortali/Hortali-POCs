@@ -34,7 +34,7 @@ class MainController: UITabBarController {
         self.setupTabBarItens()
         self.setupControllers()
         
-        self.setupCoreData()
+        CDManager.shared.createData(for: "main")
     }
     
     
@@ -62,53 +62,5 @@ class MainController: UITabBarController {
     private func setupTabBarItens() {
         self.searchController.setupTab(text: "Search", icon: .gardenTab)
         self.segController.setupTab(text: "Seg", icon: .foodTab)
-    }
-    
-    
-    
-    private func setupCoreData() {
-        let key = "main"
-        let userDefaults = UserDefaults.standard.bool(forKey: key)
-        
-        if !userDefaults {
-            let foods = ["MAIN Morango", "MAIN Batata", "MAIN Abacaxi"]
-            for item in foods {
-                let infos = AlimentoInfo(
-                    nome: item,
-                    vitaminas: [
-                        VitaminaInfo(tipo: "A"),
-                        VitaminaInfo(tipo: "B"),
-                        VitaminaInfo(tipo: "C")
-                    ]
-                )
-                
-                AlimentoCDManager.shared.addNewData(with: infos)
-            }
-            
-            UserDefaults.standard.set(true, forKey: key)
-        }
-        
-        self.prettyPrint()
-    }
-    
-    
-    private func prettyPrint() {
-        for data in AlimentoCDManager.shared.getAllData() {
-            print("""
-            \(data.nome)
-            \(self.getVitaminasPrint(for: data.vitaminas))
-            """)
-        }
-    }
-    
-    
-    private func getVitaminasPrint(for vitaminas: [VitaminaInfo]) -> String {
-        var str = ""
-        
-        for vitamina in vitaminas {
-            str.append("Vitamina \(vitamina.tipo)\n")
-        }
-        
-        return str
     }
 }

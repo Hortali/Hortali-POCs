@@ -1,25 +1,21 @@
-//
-//  Alimento+CoreDataClass.swift
-//  POC-CoreData
-//
-//  Created by Gui Reis on 29/09/22.
-//
-//
+
 import CoreData
 
-@objc(Alimento)
-public class Alimento: NSManagedObject, Identifiable {
+@objc(Food)
+public class Food: NSManagedObject, Identifiable {
     
     /* MARK: - Atributos */
     
     /* Colunas da entidade */
-    @NSManaged public var id: UUID?
-    @NSManaged public var nome: String?
-    @NSManaged public var vitaminas: NSSet?
+    @NSManaged public var id: Int16
+    @NSManaged public var name: String
+    @NSManaged public var categorie: String
+    @NSManaged public var isFavorited: Bool
+    @NSManaged public var vitaminas: NSSet
     
     
-    /// Vitamainas ligadas ao alimento
-    public var vitaminasArray: [Vitamina] {
+    /// Vitaminas ligadas ao alimento
+    public var vitaminsRelated: [Vitamina] {
         let set = self.vitaminas as? Set<Vitamina> ?? []
         return set.sorted {
             $0.id < $1.id
@@ -30,8 +26,8 @@ public class Alimento: NSManagedObject, Identifiable {
     
     /* MARK: - Métodos (Core Data) */
     
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Alimento> {
-        return NSFetchRequest<Alimento>(entityName: "Alimento")
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<Food> {
+        return NSFetchRequest<Food>(entityName: "Food")
     }
     
     

@@ -47,12 +47,7 @@ class SearchController: UIViewController, SearchControllerProtocol {
         self.setCollectionData(for: MainController.allAcademyStudents)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        print("\n\n\n>>>Search<<<\n\n")
-        self.setupCoreData()
-    }
     
-
 
     /* MARK: - Protocolo */
     
@@ -114,55 +109,5 @@ class SearchController: UIViewController, SearchControllerProtocol {
     private func setupKeyboardHandler() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
         self.view.addGestureRecognizer(tap)
-    }
-    
-    
-    
-    
-    private func setupCoreData() {
-        let key = "search"
-        let userDefaults = UserDefaults.standard.bool(forKey: key)
-        
-        
-        if !userDefaults {
-            let foods = ["SEARCH Morango", "SEARCH Batata", "SEARCH Abacaxi"]
-            for item in foods {
-                let infos = AlimentoInfo(
-                    nome: item,
-                    vitaminas: [
-                        VitaminaInfo(tipo: "A"),
-                        VitaminaInfo(tipo: "B"),
-                        VitaminaInfo(tipo: "C")
-                    ]
-                )
-                
-                AlimentoCDManager.shared.addNewData(with: infos)
-            }
-            
-            UserDefaults.standard.set(true, forKey: key)
-        }
-        
-        self.prettyPrint()
-    }
-    
-    
-    private func prettyPrint() {
-        for data in AlimentoCDManager.shared.getAllData() {
-            print("""
-            \(data.nome)
-            \(self.getVitaminasPrint(for: data.vitaminas))
-            """)
-        }
-    }
-    
-    
-    private func getVitaminasPrint(for vitaminas: [VitaminaInfo]) -> String {
-        var str = ""
-        
-        for vitamina in vitaminas {
-            str.append("Vitamina \(vitamina.tipo)\n")
-        }
-        
-        return str
     }
 }
