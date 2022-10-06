@@ -34,7 +34,7 @@ class View: UIView {
     /// Configurar a collectionView - Todas as configurações serão feitas aqui
     private let collectionFlow: UICollectionViewFlowLayout = {
         let cvFlow = UICollectionViewFlowLayout()
-        cvFlow.scrollDirection = .vertical
+        cvFlow.scrollDirection = .horizontal
         
         cvFlow.itemSize = CGSize(width: 100, height: 100)
         

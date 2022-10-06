@@ -7,7 +7,15 @@
 
 import UIKit
 
-class ViewController: UIViewController, ViewControllerProtocol, UISearchBarDelegate {
+class ViewController: UIViewController, ViewControllerProtocol, UISearchBarDelegate, SearchbarProtocol {
+    func searchbarProtocol(for index: Int) {
+        let controller = OpenScreenInfoController()
+        controller.modalTransitionStyle = .crossDissolve
+        controller.modalPresentationStyle = .fullScreen
+        
+        self.present(controller, animated: true)
+    }
+    
     
     func getDados() -> [String] {
         return self.coreData
@@ -57,6 +65,7 @@ class ViewController: UIViewController, ViewControllerProtocol, UISearchBarDeleg
         self.myView.nameCollection.dataSource = self.collectionDataSource
         
         
+        
     }
     
     func updateCollectionData(with data: [String]) {
@@ -70,6 +79,16 @@ class ViewController: UIViewController, ViewControllerProtocol, UISearchBarDeleg
         configureSearchController()
         
     }
+    
+//    // MARK: Função que liga com o protocolo
+//    private func openScreeninfo(for index: Int) {
+//        let controller = OpenScreenInfoController()
+//        controller.modalTransitionStyle = .crossDissolve
+//        controller.modalPresentationStyle = .fullScreen
+//
+//        self.present(controller, animated: true)
+//
+//    }
     
     private func configureSearchController() {
         
@@ -95,4 +114,4 @@ class ViewController: UIViewController, ViewControllerProtocol, UISearchBarDeleg
             
         }
     }
-}
+    }

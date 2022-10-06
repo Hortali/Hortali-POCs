@@ -22,6 +22,7 @@ open class SwiftLintView: UIView {
         let cvFlow = UICollectionViewFlowLayout()
         cvFlow.scrollDirection = .vertical
         
+        
         return cvFlow
     }()
     

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0609FF8928B81464006B248A /* UILabel+setupText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0609FF8828B81464006B248A /* UILabel+setupText.swift */; };
 		0609FF8B28B8152E006B248A /* LabelInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0609FF8A28B8152E006B248A /* LabelInfo.swift */; };
+		0639175C28DF8DAB00C7C8DB /* OpenScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0639175B28DF8DAB00C7C8DB /* OpenScreenController.swift */; };
 		0646066028BFF25300DA75AF /* ViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0646065F28BFF25300DA75AF /* ViewControllerProtocol.swift */; };
 		0657896128B5765B0025244C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0657896028B5765B0025244C /* AppDelegate.swift */; };
 		0657896328B5765B0025244C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0657896228B5765B0025244C /* SceneDelegate.swift */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		0609FF8828B81464006B248A /* UILabel+setupText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+setupText.swift"; sourceTree = "<group>"; };
 		0609FF8A28B8152E006B248A /* LabelInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelInfo.swift; sourceTree = "<group>"; };
+		0639175B28DF8DAB00C7C8DB /* OpenScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenScreenController.swift; sourceTree = "<group>"; };
 		0646065F28BFF25300DA75AF /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocol.swift; sourceTree = "<group>"; };
 		0657895D28B5765B0025244C /* FirstPoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstPoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0657896028B5765B0025244C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				0657896428B5765B0025244C /* ViewController.swift */,
+				0639175B28DF8DAB00C7C8DB /* OpenScreenController.swift */,
 				06EAB1E328C668F9005C2B71 /* MainTabBarController.swift */,
 			);
 			path = Controller;
@@ -236,7 +239,6 @@
 				0657895928B5765B0025244C /* Sources */,
 				0657895A28B5765B0025244C /* Frameworks */,
 				0657895B28B5765B0025244C /* Resources */,
-				06587E8F28C12A4A000BF1C1 /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -292,28 +294,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		06587E8F28C12A4A000BF1C1 /* Swift Lint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Swift Lint";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "
-";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		0657895928B5765B0025244C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -324,6 +304,7 @@
 				0609FF8B28B8152E006B248A /* LabelInfo.swift in Sources */,
 				0681FA7F28B6A015006C3E51 /* ViewCell.swift in Sources */,
 				0609FF8928B81464006B248A /* UILabel+setupText.swift in Sources */,
+				0639175C28DF8DAB00C7C8DB /* OpenScreenController.swift in Sources */,
 				0657896528B5765B0025244C /* ViewController.swift in Sources */,
 				0681FA8228B6B1FA006C3E51 /* CustomViews.swift in Sources */,
 				06EAB1E428C668F9005C2B71 /* MainTabBarController.swift in Sources */,

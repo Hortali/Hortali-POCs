@@ -10,6 +10,12 @@ import UIKit
 class NameCollectionDelegate: NSObject, UICollectionViewDelegate {
     // 2º Chamada do protocolo para comunicar com a Controller
     var delegateViewController: ViewControllerProtocol?
+    var searchBarProtocol: SearchbarProtocol?
+    
+    public func setProtocol(with protocolo: SearchbarProtocol) {
+        self.searchBarProtocol = protocolo
+    }
+    
     // Delegate
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
       // 4º Conexão do delegate com o da ViewController

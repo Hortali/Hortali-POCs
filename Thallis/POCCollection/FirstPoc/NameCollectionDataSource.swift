@@ -26,7 +26,7 @@ class NameCollectionDataSource: NSObject, UICollectionViewDataSource {
         let dadoDaLinha = self.data[indexPath.row]
         
         cell.setText(with: dadoDaLinha)
-            
+        
         return cell
     }
 }
