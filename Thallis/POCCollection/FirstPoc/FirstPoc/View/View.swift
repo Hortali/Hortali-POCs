@@ -142,6 +142,10 @@ class View: UIView {
         self.titleLabel.layer.cornerRadius = corners
         self.selectedLabel.layer.cornerRadius = corners
         self.nameCollection.layer.cornerRadius = corners * 2
+<<<<<<< Updated upstream
+=======
+        
+>>>>>>> Stashed changes
     }
     
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented)")}

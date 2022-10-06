@@ -33,8 +33,7 @@ class ViewController: UIViewController, ViewControllerProtocol, UISearchBarDeleg
     override func loadView() {
         //        super.loadView()
         self.view = self.myView
-        
-        
+
     }
     
     override func viewDidAppear(_ animated: Bool) {

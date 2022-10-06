@@ -16,6 +16,7 @@
 		0657896B28B5765B0025244C /* FirstPoc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0657896928B5765B0025244C /* FirstPoc.xcdatamodeld */; };
 		0657896D28B5765F0025244C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0657896C28B5765F0025244C /* Assets.xcassets */; };
 		0657897028B5765F0025244C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0657896E28B5765F0025244C /* LaunchScreen.storyboard */; };
+		067713BC28E4E53500C3E732 /* thisScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067713BB28E4E53500C3E732 /* thisScreen.swift */; };
 		0681FA7D28B69F81006C3E51 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0681FA7C28B69F81006C3E51 /* View.swift */; };
 		0681FA7F28B6A015006C3E51 /* ViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0681FA7E28B6A015006C3E51 /* ViewCell.swift */; };
 		0681FA8228B6B1FA006C3E51 /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0681FA8128B6B1FA006C3E51 /* CustomViews.swift */; };
@@ -38,6 +39,7 @@
 		0657896C28B5765F0025244C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0657896F28B5765F0025244C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0657897128B5765F0025244C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		067713BB28E4E53500C3E732 /* thisScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thisScreen.swift; sourceTree = "<group>"; };
 		0681FA7C28B69F81006C3E51 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		0681FA7E28B6A015006C3E51 /* ViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCell.swift; sourceTree = "<group>"; };
 		0681FA8128B6B1FA006C3E51 /* CustomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				0646066128BFF26600DA75AF /* Protocols */,
 				0657896E28B5765F0025244C /* LaunchScreen.storyboard */,
 				0657897128B5765F0025244C /* Info.plist */,
+				067713BB28E4E53500C3E732 /* thisScreen.swift */,
 			);
 			path = FirstPoc;
 			sourceTree = "<group>";
@@ -325,7 +328,11 @@
 				0681FA8228B6B1FA006C3E51 /* CustomViews.swift in Sources */,
 				06EAB1E428C668F9005C2B71 /* MainTabBarController.swift in Sources */,
 				06C6D1FA28BEA7F100B59681 /* NameCollectionDelegate.swift in Sources */,
+<<<<<<< Updated upstream
 				06BD1C8A28CA670E00C948D6 /* UITextField+SearchBar.swift in Sources */,
+=======
+				067713BC28E4E53500C3E732 /* thisScreen.swift in Sources */,
+>>>>>>> Stashed changes
 				0657896128B5765B0025244C /* AppDelegate.swift in Sources */,
 				0681FA7D28B69F81006C3E51 /* View.swift in Sources */,
 				0657896328B5765B0025244C /* SceneDelegate.swift in Sources */,
